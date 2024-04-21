@@ -4,7 +4,7 @@
 
     "start": "parcel index.html",
 
-    "build": "parcel build index.html && terser dist/index.runtime.61769073.js -o dist/index.min.js",
+    "build": "parcel build index.html && terser -o dist/index.min.js",
 
     "test": "jest"
 

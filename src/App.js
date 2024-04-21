@@ -1,7 +1,9 @@
 import FloatingButton from "./components/FloatingButton/FloatingButton";
 import './App.css'
 
-function App({user_id}) {
+function App() {
+  const user_id = window.chatbotId;
+  console.log(user_id, 'testUserId')
   return (
     <div className="widget">
       <div className="widget-button">
