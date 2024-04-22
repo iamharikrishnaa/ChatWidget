@@ -3,6 +3,9 @@ import Fab from "@mui/material/Fab";
 import { Avatar } from "@mui/material";
 import Container from "../Container/Container";
 
+require('dotenv').config();
+const WIDGET_UI = process.env.THEME_API;
+
 const FloatingButton = ({user_id}) => {
   const [containerVisible, setContainerVisible] = useState(false);
   const [themeData, setThemeData] = useState(null);
@@ -12,7 +15,7 @@ const FloatingButton = ({user_id}) => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-           `http://stanging-backend-chatbot-env.eba-xpae3fqu.ap-southeast-1.elasticbeanstalk.com/api/v1/chatbot-customizations/${user_id}/`
+           WIDGET_UI + user_id
         );
 
         if (!response.ok) {

@@ -38,7 +38,7 @@ const Container = ({ isOpen, onClose,themeData }) => {
   }, []);
 
   return (
-    <div>
+    <div className="card_wrap">
       {isOpen && (
         <Card variant="outlined" className="card" sx={{ borderRadius: 2 }}>
           <Header onClose={onClose} reset={Reset} themeData={themeData} />

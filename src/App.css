@@ -35,7 +35,6 @@
     position: relative;
     margin-right: 5px;
     margin-bottom: 10px;
-    
 }
 .header{
     display: flex;
@@ -43,18 +42,16 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 .hover-effect {
-border: none;
-padding:5px;
+    border: none;
+    padding:5px;
 }
-
 .footer{
     bottom: 0;
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top: 1px solid rgba(0, 0, 0, 0.12);
-    
+    border-top: 1px solid rgba(0, 0, 0, 0.12);  
 }
 .footer-statement{
     display: flex;
@@ -65,12 +62,11 @@ padding:5px;
 }
 .powered-by{
     font-size: larger;
-    font-family: Oli Grotesk;
+    font-family: 'Oli Grotesk';
 }
 .novagito-logo img{
     height: 20px;
     background-color: #FFF;
-   
 }
 .query{
     display: flex;
@@ -123,6 +119,7 @@ padding:5px;
     width: fit-content;
     padding: 10px;
     border-radius: 14px;
+    
 }
 .bot-response {
     display: flex;
@@ -139,4 +136,23 @@ padding:5px;
     padding: 10px;
     color: #000;
     border-radius: 14px;
+}
+
+@media only screen and (width <= 768px){
+.card {
+    width: 321px;
+}
+.bot-query {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    width: 70%;
+}
+.text-field{
+    width:321px;
+    padding:2px;
+    height: 42px;
+    justify-content:center;
+    border-radius: 23px;
+}
 }

@@ -30,3 +30,4 @@ export const Responses = [
       text: "Yes, we offer international shipping to most countries. Please check our shipping policy for more details.",
     },
   ];
+
